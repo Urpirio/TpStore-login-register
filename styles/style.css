@@ -359,3 +359,19 @@ footer section h1 a:hover > .feo{
     display: block;
     color: aliceblue;
 }
+@media (max-width:667px){
+    .Section-div-in{
+        display: none;
+    }
+    ul{
+        display: none;
+
+    }
+    li{
+        display: none;
+    }
+    .header-section1{
+        display: flex;
+        justify-content: center;
+    }
+}
