@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap" rel="stylesheet">
     <title>TpStore</title>
 </head>
 <body>
     <header>
         <section class="header-section1" >
             <div class="Section-div-h1">
-                <h1>
+                <h1 id="div-h1-logo" >
                     TpStore
                 </h1>
             </div>
@@ -24,12 +30,12 @@
                     <a href="" id="nav-div2-a" >Pricing</a>
                 </div>
                 <div class="nav-div3">
-                    <select name="" id="nav-div2-select">
+                    <select name="" id="nav-div3-select">
                         <option value="">Best practice</option>
                     </select>
                 </div>
                 <div class="nav-div4">
-                    <select name="" id="nav-div3-select">
+                    <select name="" id="nav-div4-select">
                         <option value="">Dashboard examples</option>
                     </select>
                 </div>
@@ -41,39 +47,39 @@
             </nav>
             <div class="Section-div-in">
                 <div class="div-in-login" >
-                    <a href="">Log in</a>
+                    <a id="in-login" href="">Log in</a>
                 </div>
                 <div class="div-in-sign-up">
-                    <a href="">Sign up</a>
+                    <a id="in-sign-up" href=""><button id="in-sign-up-btn" >Sign up</button></a>
                 </div>
             </div>
         </section>
     </header>
     <main>
         <section class="main-section-h1-p">
-<h1>Start Building your first dashboard</h1>
-<h3>Completely free to get started.</h3>
+<h1 class="section1-h1">Start Building your first dashboard</h1>
+<h3 class="section1-h3" >Completely free to get started.</h3>
         </section>
         <section class="main-section1">
             <form action="" class="section-form">
                 <div class="form-div-Username">
-                    <img src="" alt="">
-                    <input type="text" placeholder="Username">
+                    <img id="main-section1-Icone-Textboxs" src="../src/User-icone.png" alt="Icono de Usuario">
+                    <input id="main-section1-texboxs" type="text" placeholder="Full name">
                 </div>
                 <div class="form-div-Email">
-                    <img src="" alt="">
-                    <input type="email" placeholder="Examples@email.com">
+                    <img id="main-section1-Icone-Textboxs" src="../src/email-icone.png" alt="icono del email">
+                    <input id="main-section1-texboxs" type="email" placeholder="Examples@email.com">
                 </div>
                 <div class="form-div-Password">
-                    <img src="" alt="">
-                    <input type="password" placeholder="Password">
+                    <img id="main-section1-Icone-Textboxs" src="../src/password-icone.png" alt="icono de la contraseña">
+                    <input id="main-section1-texboxs" type="password" placeholder="Password">
                 </div>
                 <div class="form-div-term">
                     <div class="div-term-checkbox">
-                        <input type="checkbox" name="" id="term-checkbox">
+                        <input type="checkbox" name="" class="term-checkbox">
                     </div>
                     <div class="div-term-p-link" >
-                        <p>I have agree to the <a href="">Terms of services</a></p>
+                        <p id="term-p-link">I have agree to the <a id="term-p-link-a" href="">Terms of services</a></p>
                     </div>
                 </div>
                 <div class="form-div-btn">
@@ -82,11 +88,10 @@
             </form>
         </section>
         <section class="main-section-p">
-            <p id="section-p-a-img">Already using Tpstore? 
-                <a id="p-a-img" href="">
-                    Log in <img id="a-img" src="" alt="">
-                </a>
-            </p>
+            <div id="section-p-a-img">Already using Tpstore? 
+                <a id="p-a-img" href="">Log in</a>  
+            </div>
+            <a href=""><img id="a-img" src="../src/login-icone.png" alt="Icono de login"></a>
         </section>
     </main>
 </body>
