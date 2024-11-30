@@ -10,7 +10,9 @@ body{
     align-items: center;
     background-color: #16103A;
     border: none;
+    
 }
+
 #div-h1-logo{
     color: forestgreen;
     font-family: "Edu AU VIC WA NT Pre", cursive;
@@ -23,65 +25,105 @@ body{
     justify-content: space-evenly;
     align-items: center;
     font-weight: 700;
+    animation-name: section-nav;
+    animation-duration: 0.7s;
 }
-#nav-div1-select{
-    background-color: #16103a00;
-    color: #ffffff;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    font-weight: 700;
-    transition: 300ms;
-}
-#nav-div1-select:hover{
-    font-size: 20px;
-    border-bottom: 2px solid white;
-}
-.nav-div2{
-    margin-left: 12px;
-    margin-right: 12px;
+@keyframes section-nav{
+    from{
+       margin-top: -100%;
+    }
+    to{
+        margin-top: 0%;
+    }
 }
 
-#nav-div2-a{
+.Section-nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+}
+.Section-nav ul a{
+    display: block;
     text-decoration: none;
+    background-color: #16103A;
     color: #ffffff;
+    padding: 10px;
+}
+.section-nav-link-products{
+    font-weight: 500;
     font-size: 18px;
     transition: 300ms;
 }
-#nav-div2-a:hover{
-    font-size: 20px;
-    border-bottom: 2px solid white;
-}
-#nav-div3-select{
-    background-color: #16103a00;
-    color: #ffffff;
-    font-size: 18px;
-    border: none;
-    outline: none;
+.section-nav-link-products:hover{
+    border-bottom: 2px solid white ;
     font-weight: 700;
-    transition: 300ms;
-}
-#nav-div3-select:hover{
     font-size: 20px;
-    border-bottom: 2px solid white;
 }
-.nav-div4{
-    margin-left: 12px;
-    margin-right: 12px;
-}
-
-#nav-div4-select{
-    background-color: #16103a00;
-    color: #ffffff;
+.section-nav-link-procing{
+    font-weight: 500;
     font-size: 18px;
-    border: none;
-    outline: none;
-    font-weight: 700;
     transition: 300ms;
 }
-#nav-div4-select:hover{
-    font-size: 20px;
-    border-bottom: 2px solid white;
+.section-nav-link-procing:hover{
+    border-bottom: 2px solid white ;
+    font-weight: 700;
+    font-size: 20px
+}
+.section-nav-link-best-practice{
+    font-weight: 500;
+    font-size: 18px; 
+    transition: 300ms;
+}
+.section-nav-link-best-practice:hover{
+    border-bottom: 2px solid white ;
+    font-weight: 700; 
+    font-size: 20px
+}
+.section-nav-link-dashboard-examples{
+    font-weight: 500; 
+    font-size: 18px;
+    transition: 300ms;
+}
+.section-nav-link-dashboard-examples:hover{
+    border-bottom: 2px solid white ;
+    font-weight: 700; 
+    font-size: 20px
+}
+.section-nav-link-company{
+    font-weight: 500;
+    font-size: 18px;
+    transition: 300ms;
+}
+.section-nav-link-company:hover{
+    border-bottom: 2px solid white ;
+    font-weight: 700;
+    font-size: 20px
+}
+.Ul-Li-Ul-li-a{
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+.Ul-Li-Ul-li-a:hover{
+    background-color: #2c2073;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.Section-nav ul ul{
+    display: none;
+    position: absolute;
+    padding: 0;
+}
+.Section-nav ul ul li{
+    float: none;
+}
+.Section-nav ul ul a{
+    line-height: 120%;
+}
+.Section-nav ul li:hover > ul{
+    display: block;
 }
 .Section-div-in{
     display: flex;
@@ -141,7 +183,7 @@ main{
     border-bottom-left-radius: 150%;
     border-bottom-right-radius: 150%;
     color: #ffffff;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-name: main-Section1;
 }
 @keyframes main-Section1{
@@ -153,11 +195,11 @@ main{
     }
 }
 .section1-h1{
-    animation-duration: 4s;
+    animation-duration: 1s;
     animation-name: section1-h1;
 }
 .section1-h3{
-    animation-duration: 4s;
+    animation-duration: 1s;
     animation-name: section1-h1;
 }
 @keyframes section1-h1{
@@ -280,4 +322,40 @@ h3{
 #a-img{
     height: 20px;
     margin-top: 8.25px;
+}
+footer section{
+    background-color: #16103A;
+    height: 5cm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+footer section h1{
+    color: #4731bf;    
+    font-size: 18px;
+    font-weight: 600;
+    transition: 300ms;
+}
+footer section h1:hover{
+    font-size: 20px;
+}
+footer section h1 a{
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 300ms;
+}
+
+footer section h1 a:hover{
+    font-size: 22px;
+}
+.feo{
+    display: none;
+    position: absolute;
+}
+footer section h1 a:hover > .feo{
+    display: block;
+    color: aliceblue;
 }
